@@ -18,6 +18,9 @@ namespace UnitTestProject1
             driver.Navigate().GoToUrl("https://www.google.com");
             Task.Delay(5000).Wait();
 
+            driver.FindElement(By.XPath("//*[@id='tsf']/div[2]/div/div[1]/div/div[1]/input")).SendKeys("Waterloo");
+            Task.Delay(5000).Wait();
+
             driver.Quit();
         }
     }
